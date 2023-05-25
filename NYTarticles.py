@@ -7,7 +7,7 @@ openai.api_key="----------------------------"
 def article(query):
   result = openai.Completion.create(
   model="text-davinci-003",
-  prompt="Write an New York Times article: {}".format(query),
+  prompt="Write a New York Times article: {}".format(query),
   temperature=0.7,
   max_tokens=256,
   top_p=1,
